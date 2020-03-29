@@ -1,4 +1,4 @@
-package com.ziembatomasz.ranking;
+/*package com.ziembatomasz.ranking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class RankingApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}*/
