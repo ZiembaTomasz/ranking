@@ -29,7 +29,7 @@ public class RankingService {
     }
 
     public void removePlayer(Long playerId) {
-        redisTemplate.opsForZSet().remove("test", playerId);
+        redisTemplate.opsForZSet().remove("Long Jump", playerId);
     }
 
     public void addPlayerScoreToJump(Long userId, double score) {

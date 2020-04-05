@@ -23,6 +23,5 @@ public class PlayerMapper {
             playerSet.add(player);
         }
         return playerSet;
-
     }
 }

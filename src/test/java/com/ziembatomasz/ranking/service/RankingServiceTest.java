@@ -100,4 +100,16 @@ public class RankingServiceTest {
         //Then
         assertEquals(1, newSet.size());
     }
+    @Test
+    public void shouldDeleteUser(){
+        //Given
+        Player player = new Player("George Ptac", "347", 11.02);
+        String key = "Long Jump";
+        Long playerId = 1L;
+        when(redisTemplate.opsForZSet()).thenReturn(zSetOperations);
+        //When
+        rankingService.removePlayer(1L);
+        //Then
+        verify(zSetOperations, times(1)).remove(key,playerId);
+    }
 }
